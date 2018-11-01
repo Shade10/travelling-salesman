@@ -10,18 +10,15 @@ export default class GA {
     this.best = null
 
     this.rate = options.rate
-    this.xFunc = options.xFunc
-    this.mFunc = options.mFunc
+    this.crossFunc = options.crossFunc
 
     for (let i = 0; i < this.life_count; i++) {
       this.lives.push(new Life(this.gene_length))
     }
   }
 
-
   // Calculate the score of each individual based on the method passed in
   doRate () {
-    //let last_avg = this.scores / this.life_count
     this.scores = 0
     let last_best_score = -1
 
@@ -35,11 +32,11 @@ export default class GA {
     })
   }
 
-  bear (p1, p2) {
+  descendand (p1, p2) {
     // generate descendants, based on p1 & p2 
     let gene
     if (Math.random() < this.x_rate) {
-      gene = this.xFunc(p1, p2)
+      gene = this.crossFunc(p1, p2)
     } else {
       gene = p1.gene.slice(0)
     }
@@ -60,7 +57,7 @@ export default class GA {
   }
 
   newChild () {
-    return this.bear(this.getOne(), this.getOne())
+    return this.descendand(this.getOne(), this.getOne())
   }
 
   next () {
