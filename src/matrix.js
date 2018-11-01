@@ -1,7 +1,3 @@
-/**
- * shuffle elements in array
- */
-
 'use strict'
 
 export default function (arr) {

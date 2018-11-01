@@ -2,9 +2,6 @@ import matrix from './matrix'
 import GA from './GeneticAlgorithm'
 import promise from './promise'
 
-
-
-
 export default class mainFuncApp {
   constructor(el, width, height, onstart, onstop) {
     this.el = el
