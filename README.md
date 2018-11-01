@@ -1,0 +1,8 @@
+# Temat zadania: Wyznaczanie najkrótszej trasy dojazdu
+### Opis: Przygotowanie aplikacji do wyznaczania najkrótszej trasy między wieloma punktami. Na formularzu użytkownik podaje n punktów (mogą to być współrzędne geograficzne) oraz punkt startowy. Należy wyznaczyć najkrótszą trasę od punktu startowego, przez wszystkie n punktów, wracając do punktu startowego. Nie należy korzystać z usług API (np Google Distance Matrix) do wyznaczania najszybszej czy najkrótszej trasy dojazdu, ale oprzeć się na odległościach w linii prostej między współrzędnymi geograficznymi (tutaj pomocny może być wzór na odległość euklidesową). Aplikacja tak naprawdę ma rozwiązać problem komiwojażera. Wynikiem działania aplikacji powinna być lista kolejnych odcinków do pokonania wraz z odległościami oraz całkowita odległość do pokonania w ramach wszystkich odcinków.
+
+# Wymagania technologiczne:
+### Po stronie frontu dowolna technologia (może być React może być Angular, a najlepiej VanillaJS), po stronie backendu preferowany NodeJS (oczywiście backend nie jest konieczny, ale może być przydatny - tu można wykazać się umiejętnością wykorzystania znajomości REST'a, komunikacji po HTTP itd.).
+### Ponadto, aplikacja powinna posiadać testy automatyczne (no i co najważniejsze testy muszą przechodzić pozytywnie) - mile widziany Jest lub Mocha. Cenione będzie stosowanie zasady "clean code".
+
+### Projekt powinien być prowadzony w GIT.
