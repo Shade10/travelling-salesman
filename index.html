@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Travelling salesman</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <h1>Travelling salesman</h1>
+
+    <div id="operations">
+      <button id="btn-random">generate</button>
+    </div>
+
+    <div>
+      <span>set number of nodes and press 'generate' button</span>
+      <input id='number-of-nodes' type='number' value="10">
+    </div>
+    <div id='current-path-container'>
+      <p> Current path: <span id='path'> x </span></p>
+      <p> Distance to next: <span id='distance'> x </span> </p>
+      <p> Total distance: <span id='total-distance'> x </span> </p>
+
+    </div>
+
+    <div id="container">
+      <canvas id="c"></canvas>
+    </div>
+
+
+
+  </div>
+
+  <script src="build/jquery-3.3.1.min.js"></script>
+  <script src="build/bundle.js"></script>
+</body>
+
+</html>
